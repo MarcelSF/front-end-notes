@@ -1,0 +1,157 @@
+Build your own html/css components!
+
+Objectives: Create your own components and adopt a very nice organization.
+
+Difference for today: CSS in multiple files.
+
+Basically -> One stylesheet for general styling which will import the stylesheet for each component.
+
+components -> Buttons, avatar, headers, forms, cards, etc.
+
+If you have your components organized and set, the rest is much easier.
+
+Let's create out first components.
+
+#1 CONTAINER
+place a div around the h2 with the class container
+Style it in the container.css file
+
+width: 900px;
+margin: 0 auto; -> to center it
+
+
+#2 Avatar -> create a new file called avatar.css. Import it in style.css
+
+remember to place the imgs in the html file!
+
+.avatar {
+  width: 40px;
+  border-radius: 50%;
+}
+
+
+.avatar-large {
+  width: 56px;
+  border-radius: 50%;
+  height: 56px;
+  object-fit: cover;
+}
+
+#3 Buttons
+
+you'll be styling <a> elements
+
+search and browse
+
+REmember: new CSS file called buttons.css
+
+.btn-airbnb {
+  text-decoration: none;
+  background-color: *pick one;
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.2)
+  transition: 0.3s
+}
+
+.btn-airbnb:hover {
+  background-color: Color as above but darker.
+}
+
+.btn-medium {
+  text-decoration: none;
+  border: 1px solid green;
+  color: green;
+  padding: 8px 24px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.2)
+  transition: 0.3s
+}
+
+.btn-medium:hover {
+  color: darker-green;
+  border: 1px solid darker-green;
+}
+
+Let's use our atoms to code a molecule-> Look at the slide to create it!
+
+touch banner.css -> remember to import
+
+Images on banners, etc -> Inline styling might be more beneficial!
+
+remember to make the font sizes bigger! :)
+
+.banner {
+  color: white;
+  background-size: cover;
+  padding: 150px 0;
+}
+
+.banner p {
+  font-size: 24px;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+  \* makes the white words more readable!
+}
+
+.banner h2 {
+  font-size: 40px;
+}
+
+After finishing the banner, go through the Flex Box slides and explain them a bit better.
+
+FLEXBOX -> Cherry on top! It makes our lifes easier.
+
+Aligning items, floating items to left and right, make the page responsive, etc. Flexbox makes solving these challenges easier.
+
+Then do the quizz!
+
+category-card:
+
+display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+Product-Card:
+
+ display: flex;
+   align-items: center;
+
+  Group h2 and p elements into a single div
+
+Trip-card:
+
+image-apart: object-fit: cover;
+Top div won't be flex (image on top of text). The text part will have display:flex
+
+Finish the lecture by livecoding each of those components. Refer to your finished livecodes for reference.
+
+REMEMBER THE RESPONSIVENESS PART! Media Queries
+
+If asked, you need this in your HEAD
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+Add this to your container.css
+
+@media (max-width: 900px) {
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 300px;
+  }
+}
+
+
+
+

@@ -1,0 +1,47 @@
+WATCH OUT FOR THIS:
+
+STYLE.CSS has prewritten classes and attributes. Use them to your advantage
+
+There will be a very brief intro to flexbox -> Read up on it
+
+Pay attention to these classes and attributes:
+
+.container
+.list-inline
+
+For the background image, use this:
+background-image: url('https://source.unsplash.com/random');
+
+Don't forget to import font-awesome:
+@import url("https://use.fontawesome.com/releases/v5.7.1/css/all.css");
+
+create files for:
+
+card, button and avatar
+
+@import url("components/card.css");
+@import url("components/button.css");
+@import url("components/avatar.css");
+
+
+FLEXBOX: A CSS3 layout mode that provides and easy and clean way to arrange items within a container. Used for mobile friendliness and responsiveness!
+
+Remember, content flows down in a column. We have to change this using FLEXBOX
+
+Flexbox-> Pay attention to parent div and child div relationship.
+
+You can change the direction. Default with flexbox is horizontal (x axis). But you can determine the direction of the flex!
+
+flex-direction: column, row, etc.
+justify-content: flex-end, center, space-between, space-evenly, etc
+
+align-items: center, flex-start, flex-end, etc
+
+flex-wrap: To WHERE the flow will go if the screen size changes!
+
+flex-wrap: wrap;
+
+align-content: flex-start, space-around, etc
+
+child elements can be ordered with order: 1,2,3, etc property.
+

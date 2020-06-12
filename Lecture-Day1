@@ -1,0 +1,249 @@
+This week's objective: Build a profile page with HTML, CSS & Bootstrap
+
+Show boris profile page as an example
+
+Show the folder with html file, css file, etc. Simple project!
+
+  Theory!
+
+  HTML and CSS for 3 days
+
+  JS for the next week.
+
+  HTML -> Content, text, image. Anything that is displayed on the page.
+
+  CSS -> Styling, make your page prettier!
+
+  JS -> Anymations and computing on the front-end!
+
+
+HTML -> FOLLOW THE SLIDES!!
+
+  Your content is WRAPPED AROUND TAGS! Each tag has different properties, styling and responsibilities that is interpreted by the browser!
+
+  What is the first tag of all?
+
+  <html></html>
+
+  <head></head> -> All the metadata, the "intelligence" part of the html, as well as the link to the stylesheet.
+  Anything that isn't displayed but is relevant to the page. Ex: Data for google search, links to libraries, etc.
+
+  <body></body> -> Everything that is actually displayed on the page.
+
+  <title></title> -> It is what is shown in the page title!(look at the tab). Also used for google and result links
+  <meta>-> Used by google for the description that goes beneath the link
+  <meta>charset -> encoding of special characters. You need this for special characters!
+  <meta> You also can have information for other websites, like Facebook, etc.
+
+  AFTER TALKING ABOUT META TAGS, COPY PASTE CODE INTO THE INDEX.HTML TO START
+
+  <body>
+    COPY FROM THE SLIDES. Open the file in your browser
+  </body>
+
+  BASIC SYNTAX
+
+  start_tag Attributes content end_tag
+
+  example:
+
+  <a href="https://www.lewagon.com" target="_blank">
+    Le Wagon
+  </a>
+
+  target="_blank" -> Open in new tab
+  target="_self" => open in the same tab, default behavior.
+
+  <h1>This is your main header!</h1> -> One per page ideally.
+  <h2></h2>
+  <h3></h3>
+  ... harder to go lower.
+
+  <p></p> -> general text
+  <em></em> -> To emphasize, itallic
+  <strong></strong> -> bold
+  <ul></ul> -> Bullet points
+  <ol></ol> -> numbers
+  <img src="" alt=""> we don't write content, self closing.
+
+  <form action="Where does the form go after submit"></form>
+
+  Many more! Browse the documentation!
+
+  -> EXPLAIN THE SERVE COMMAND.
+
+  tag_name + tab = shortcut!
+
+  Get the Boris example and then try to copy it! with Milene
+
+Hello, I'm Milene 🤗
+I am your one and only bootcamp manager! I love working with people and helping them reach their full potential as developers. I also love eating and am quite energetic!
+
+Discover Le Wagon
+Korean Dramas 🇰🇷
+I recently discovered awesome Korean dramas on Netflix!
+
+Walks on the Beach 🏖
+My morning rituals include waking up super early and going for a walk on the beach!
+
+Food! 🍣🍕🍜
+I also love to eat! As soon as this pandemic is over, let's go out together 😁
+
+Follow me...
+
+  cmd + control + space to choose emojis
+
+  h1 for title
+  img for image -> remember the correct path!
+
+  <a href="https://www.lewagon.com">Discover Le Wagon</a> -> The button is styled as a button! This is done by css
+
+  a couple of <h2></h2> with paragraphs <p></p>  beneath
+
+  Code it, use your template if necessary
+
+  CSS -> Show medium without CSS
+
+  Link the CSS stylesheet to the html file!
+
+  <link rel="stylesheet" href="style.css">
+
+  Show the syntax
+
+  COLORS
+
+  Show the 3 ways of selecting a color.
+
+  -Color Hexadecimal
+
+  -rgb -> closer to 0 = black. Closer to 255 = white.
+
+  -rgba -> a = Alpha, parameter for opacity
+
+  Show the bad websites! choose few colors, less is more!
+
+  TEXT VS BACKGROUND
+  color: FOR THE FONT
+  background-image: places a background image
+
+  You can change the font family!
+  We'll show how to import fonts later
+
+  Letter spacing, font-size, line-height
+
+  Text decoration: determine which one you'll use, or remove it completely.
+
+  Text align alignment rules!
+
+  With css, you can make an entire element bold, for example.
+
+  You usually choose 2 fonts for a project: 1 for text and
+  1 for headers.
+
+  ---->GOOGLE FONTS: Select a font and the weights.
+  Poppins!
+
+  Don't forget on the html:
+
+  <link rel="stylesheet" href="style.css">
+
+  body {
+    font-family: 'Open Sans';
+  }
+
+  h1, h2 {
+    font-family: 'Poppins';
+  }
+
+  Show the styling, show the a:hover, show color hunter, etc. Pay attention to the CSS selectors!
+
+  Show to add icons with font-awesome! A library of fonts
+  but that have icons! Icons can be changed with CSS.
+
+  correct font-awesome link in the hmtl head:
+
+  <link rel="stylesheet" href="<https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+
+  OR in the CSS:
+
+
+  @import url('https://use.fontawesome.com/releases/v5.0.13/css/all.css');
+
+
+
+ DIVS -> FOLOW THE SLIDES
+
+Divs are a new tag that wraps around your content!
+
+Show the slide.
+
+BOX MODEL -> Has it's own properties
+
+You can play with borders! -> Careful, it's old school
+
+Border Radius -> Rounded corners! You can even make circles. Quite cool, but use wisely.
+
+Brief comment on multiples of 8 -> https://builttoadapt.io/intro-to-the-8-point-grid-system-d2573cde8632
+
+https://spec.fm/specifics/8-pt-grid
+
+Place a first div, then play around with it in the INSPECTOR (command + shift + C)
+
+LIVE CODE THE DIVS! -> How would you style it? first inspect and change the proporties, then go to the CSS
+ Design tips are on the slide!
+
+  div {
+    background: white;
+    padding: 24px;
+    margin: 70px;
+    box-shadow: 0 5px 15px rgb(0,0,0,0.1);
+  }
+
+If we do this, ALL our divs will be the same.
+
+id and class -> Let's you differentiate between html elements!
+
+class -> define small classes that you can reuse!
+id -> more specific!
+
+CLASS NAMING: MAKE IT CLEAR!
+btn-red, background-blue, img-circle!
+
+We want classes named according to what they do to the element. THINK graphically.
+
+.component-shape
+
+Finish styling the page!
+
+Button, divs and the list LIST!
+
+Remember to think about the divs BEFORE getting to it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

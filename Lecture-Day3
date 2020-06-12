@@ -1,0 +1,113 @@
+
+We will learn Bootstrap and CSS GRID(layouts)
+
+3 different htmls-> 1 for Bootstrap, 2 for layouts.
+
+#1 - BOOTSTRAP!
+
+Develloped initially by twitter-> Consistency!
+
+Released as open source, one of the most starred repos on github. - current version is 4.5
+
+It is meant to be very semantic!
+
+Colors are based on semantics!
+
+Buttons, utility classes and the like are already coded for us! Flexbox as well!
+
+Your classes are already doing the styling for you without having to go to the CSS.
+
+Awesome documentation. EXPLORE IT PLEASE!
+
+remember-> elements can have multiple classes!
+
+It also helps you design nice forms from the get go! -> Use bootstrap for forms!
+
+bootstrap only challenge -> Refer to the solution if in doubt!
+
+Remember to show them the link to the bootstrap library on your
+html HEAD. Show the JS links at the bottom of the HTML.
+
+Start with the HTML!
+
+default is align-items: stretch for bootstrap.
+
+For the header:
+
+<div class="border-bottom">
+  <div class="d-flex justify-content-between align-items-center container p-3">
+    <img src="images/logo.png" alt="">
+    <a href="#" class="btn btn-primary">Login</a>
+  </div>
+</div>
+
+Place the image, h1 and <p>
+
+For the form:
+
+<form action="#">
+  <div class="form-group">
+    <label for="">Message</label>
+    <input type="text" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="">Arrival</label>
+    <input type="text" class="form-control">
+  </div>
+    <div class="form-group">
+    <label for="">Departure</label>
+    <input type="text" class="form-control">
+  </div>
+  <input type="submit" class="btn btn-primary w-100">
+</form>
+
+MOVING ONTO LAYOUTS!
+
+Bootstrap GRID
+
+Helpful for responsiveness. Has a mobile first paradigm. System of rows and columns.
+
+You need a container, and inside that container you put the rows.
+
+ROW -> Flexbox by default!
+
+After this, we make the AIRBNB page responsive using bootstrap grid! Show it!
+
+class="col-12 col-md-6 col-lg-8" AND
+class="col-12 col-md-6 col-lg-4"
+
+Conclude with the slides, then CSS GRID
+
+NO MORE BOOTSTRAP -> Show the lack of bootstrap on the html file.
+
+Page layouts will be determined in their own css files!
+
+mosaic of equal cards -> Use CSS grid!
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+  padding: 16px;
+}
+
+Until here, pretty chill!
+
+Now comes the tricky part with FLEXBOX (NO BOOTSTRAP)
+
+FIRST PART IS CHILL
+
+With map -> Place everything inside a 'main-container' and set it to display: flex
+
+Then add 100vh to #map
+
+.cards {
+
+flex-grow: 1 -> A growth rate for the flex-item!
+}
+
+flex-grow -> If you have different grow-rates to different items, they will grow differently!
+
+
+
+
